@@ -138,6 +138,19 @@ img {
   color: var(--main-red);
 }
 
+.timer {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.timer span {
+  display: block;
+  font-size: 4.5rem;
+}
+
 #register {
   font-size: 2rem;
 }
@@ -185,7 +198,7 @@ img {
   text-align: center;
 }
 
-.about-left>img {
+.about-left > img {
   width: auto;
   border-radius: 50%;
   padding: 50px;
@@ -207,21 +220,31 @@ img {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--main-gray);
+  height: 100vh;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
 }
 
-.theme-section-header>h2 {
+.theme-section-header > h2 {
   font-size: 6rem;
+  padding-top: 10rem;
+}
+
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
 }
 
 @media (max-width: 28.75em) {
-  .theme-section-header>h2 {
+  .theme-section-header > h2 {
     font-size: 4rem;
   }
 }
-
 
 .testimonials {
   margin: 50px auto 50px;
@@ -241,7 +264,7 @@ img {
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -282,7 +305,7 @@ img {
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .testimonials .card .content .details h2 {
@@ -310,7 +333,7 @@ img {
   width: 100%;
   /* height: 80vh; */
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: var(--main-gray);
 }
 
 .time {
@@ -322,24 +345,22 @@ img {
 .time h2 {
   color: #a6ff00;
   font-family: 'Merriweather', serif;
+  font-size: 4rem;
 }
 
 .time p {
-
   color: aqua;
   border-top: 2px dashed;
   border-color: blue !important;
   margin: 0;
   padding: 30px;
-  font-size: 29px;
+  font-size: 2rem;
 }
 
 .time span {
   color: rgb(141, 223, 34);
-  font-size: 20px;
+  font-size: 2rem;
 }
-
-
 
 .time p:nth-child(even) {
   border-left: 2px dashed;
@@ -368,7 +389,6 @@ img {
   border-bottom-left-radius: 0;
 }
 
-
 /* Sponsor section */
 
 .sponsors-section {
@@ -379,7 +399,7 @@ img {
   text-align: center;
   width: 100%;
   padding: 10rem 2rem;
-  background: var(--main-gray);
+  background: var(--main-blue);
 }
 
 /* Contact section */
@@ -391,40 +411,90 @@ img {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 80vh;
+  height: 50vh;
   padding: 0 2rem;
-  background: var(--main-blue);
+  background: #e3edf7;
 }
 
-.contact-section-header>h2 {
+.contact-section-header > h2 {
   font-size: 6rem;
+  color: var(--main-gray);
 }
 
 @media (max-width: 28.75em) {
-  .contact-section-header>h2 {
+  .contact-section-header > h2 {
     font-size: 4rem;
   }
 }
 
-.contact-section-header>p {
-  font-style: italic;
+.contact-web {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #555;
+  text-align: center;
 }
 
-.contact-links {
+.num {
+  color: #555;
+}
+
+.num:hover {
+  color: #4fce5d;
+}
+
+.query {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Social-media {
   display: flex;
   justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
+}
+.a {
+  display: flex;
+  background: #e3edf7;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: transform 0.5s;
+}
+.i {
+  font-size: 2rem;
+  color: #777;
+  transition: transform 0.5s;
 }
 
-.contact-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
+.a:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px -1px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  transform: translateY(2px);
+}
+.a:hover i {
+  transform: scale(0.9);
+}
+.a .fa-facebook {
+  color: #3b5998;
 }
 
-.contact-details:hover {
-  transform: translateY(8px);
+.a .fa-whatsapp {
+  color: #4fce5d;
+}
+.a .fa-instagram {
+  color: #f14843;
+}
+.a .fa-envelope {
+  color: #f00;
 }
