@@ -1,3 +1,4 @@
+ 
 /* Custom properties/variables  */
 :root {
   --main-white: #f0f0f0;
@@ -404,6 +405,10 @@ img {
   transition: transform 0.5s;
 }
 
+.testing{
+  display: none !important;
+}
+
 .i {
   font-size: 2rem;
   color: #777;
@@ -534,7 +539,7 @@ CSS Pretty Print #gallery img {
 
 @media (min-width: 576px) {
   .carousel-item img {
-    height: 350px;
+    height: 100%;
   }
 }
 
