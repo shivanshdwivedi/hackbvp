@@ -54,19 +54,20 @@ let countDown = new Date('Sep 2, 2020 00:00:00').getTime(),
 
 //====================================
 
-// $('.carousel').carousel({
-//   interval: 10000,
-//   pause: 'false',
-// });
 
-//=====================================
+$('.carousel').carousel({
+  interval: 6000,
+  pause: 'false',
+});
 
-// function switchStyle() {
-//   if (document.getElementById('styleSwitch').checked) {
-//     document.getElementById('gallery').classList.add('custom');
-//     document.getElementById('exampleModal').classList.add('custom');
-//   } else {
-//     document.getElementById('gallery').classList.remove('custom');
-//     document.getElementById('exampleModal').classList.remove('custom');
-//   }
-// }
+
+function switchStyle() {
+  if (document.getElementById('styleSwitch').checked) {
+    document.getElementById('gallery').classList.add('custom');
+    document.getElementById('exampleModal').classList.add('custom');
+  } else {
+    document.getElementById('gallery').classList.remove('custom');
+    document.getElementById('exampleModal').classList.remove('custom');
+  }
+}
+
