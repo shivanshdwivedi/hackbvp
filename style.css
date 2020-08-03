@@ -238,7 +238,7 @@ img {
   height: 70%;
 }
 
-.carousel{
+.carousel {
   width: 60% !important;
 }
 
@@ -516,12 +516,12 @@ img {
   color: #f00;
 }
 
-@media screen and (max-width:480px){
-  .fixed-top{
+@media screen and (max-width:480px) {
+  .fixed-top {
     position: absolute;
   }
 
-  .main{
+  .main {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 auto;
@@ -529,54 +529,54 @@ img {
 
 
 
-  .left{
+  .left {
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  .left h1{
+  .left h1 {
     padding: 0;
   }
 
-  .right{
-    margin:0 auto;
+  .right {
+    margin: 0 auto;
   }
 
-  .about-left{
+  .about-left {
     margin: auto;
     width: 90%;
     float: none;
   }
 
-  .about-left img{
+  .about-left img {
     width: 100%;
   }
 
-  .about-right{
+  .about-right {
     width: 100%;
   }
 
-  .carousel{
+  .carousel {
     width: 100% !important;
   }
 
-  .sponsors-section{
+  .sponsors-section {
     flex-direction: column;
   }
 
-  .container{
-    display:contents
+  .container {
+    display: contents
   }
 
-  .card{
+  .card {
     margin-right: 0 !important;
     width: 50% !important;
-    margin-bottom:15%;
+    margin-bottom: 15%;
   }
 
 
-  .sponsors-section{
+  .sponsors-section {
     padding-bottom: 2rem;
   }
 }
