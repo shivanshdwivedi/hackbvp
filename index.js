@@ -54,10 +54,10 @@ let countDown = new Date('Sep 2, 2020 00:00:00').getTime(),
 
 //====================================
 
-$('.carousel').carousel({
-  interval: 10000,
-  pause: 'false',
-});
+// $('.carousel').carousel({
+//   interval: 10000,
+//   pause: 'false',
+// });
 
 //=====================================
 
