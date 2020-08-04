@@ -428,3 +428,36 @@ img {
 .a .fa-envelope {
   color: #f00;
 }
+
+@media (max-width: 28.75em) {
+  .contact-section {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .team-section {
+    /* font-size: 4rem; */
+    height: 100px;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .sec-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .inner-box{
+    font-size: 4rem; 
+    height: 460px;
+    width: 300px;
+    } 
+  }
+@media (max-width: 28.75em) {
+  .contact-web {
+    font-size: 4rem;
+  }
+}
+
