@@ -331,7 +331,7 @@ img {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   padding: 0 2rem;
   background: #e3edf7;
 }
@@ -449,15 +449,19 @@ img {
 }
 
 @media (max-width: 28.75em) {
-  .inner-box{
-    font-size: 4rem; 
+  .inner-box {
+    font-size: 4rem;
     height: 460px;
     width: 300px;
-    } 
   }
+}
+
 @media (max-width: 28.75em) {
   .contact-web {
     font-size: 4rem;
   }
-}
 
+  .credits {
+    font-size: 50%;
+  }
+}
