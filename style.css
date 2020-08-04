@@ -178,7 +178,7 @@
    text-align: center;
    padding: 10rem 2rem;
    background: var(--main-blue);
-   height: 100vh;
+   height: 100%;
  }
 
  .about-section-header {
@@ -197,6 +197,7 @@
    width: 70%;
    float: right;
    text-align: center;
+   padding-bottom: 6rem;
  }
 
  .about-left>img {
@@ -239,12 +240,17 @@
    width: 100%;
    height: 100%;
    padding: 10rem 2rem;
-   background: var(--main-blue);
+   background: #e3edf7;
  }
 
  .theme-section-header>h2 {
    font-size: 6rem;
    padding-top: 10rem;
+ }
+
+ .theme-section-heading {
+   color: black;
+   padding-bottom: 3rem;
  }
 
  .carousel,
@@ -373,12 +379,13 @@
    align-items: center;
    text-align: center;
    width: 100%;
-   height: 50vh;
+   height: 100%;
    padding: 0 2rem;
    background: #e3edf7;
  }
 
  .contact-section-header>h2 {
+   padding-top: 2rem;
    font-size: 6rem;
    color: var(--main-gray);
  }
@@ -387,6 +394,7 @@
    .contact-section-header>h2 {
      font-size: 4rem;
    }
+
  }
 
  .contact-web {
