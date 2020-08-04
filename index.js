@@ -61,30 +61,29 @@ let countDown = new Date('Sep 2, 2020 00:00:00').getTime(),
 
 //=====================================
 
-
 // function switchStyle() {
 //   if (document.getElementById('styleSwitch').checked) {
-    
-//   } 
+
+//   }
 //   }
 // }
 
 function myFunction(y) {
-  if (y.matches) { // If media query matches
+  if (y.matches) {
+    // If media query matches
     // document.getElementById('gallery').classList.add('custom');
     // document.getElementById('exampleModal').classList.add('custom');
-    console.log(document.getElementById('carouselExampleFade').classList)
+    console.log(document.getElementById('carouselExampleFade').classList);
     document.getElementById('carouselExampleFade').classList.add('testing');
     document.getElementById('gallery').classList.remove('testing');
-  }else {
+  } else {
     // document.getElementById('gallery').classList.remove('custom');
     // document.getElementById('exampleModal').classList.remove('custom');
     document.getElementById('gallery').classList.add('testing');
     document.getElementById('carouselExampleFade').classList.remove('testing');
-
-;  }
+  }
 }
 
-var y = window.matchMedia("(max-width: 480px)")
-myFunction(y) // Call listener function at run time
-y.addListener(myFunction) // Attach listener function on state changes
+var y = window.matchMedia('(max-width: 480px)');
+myFunction(y); // Call listener function at run time
+y.addListener(myFunction); // Attach listener function on state changes
