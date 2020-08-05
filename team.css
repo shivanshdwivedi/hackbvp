@@ -52,10 +52,19 @@ img {
   margin-bottom: 60px;
 }
 
+.hritik{
+  margin-left: 140px !important;
+}
+
+.sahil{
+  margin-left: 100px !important;
+}
+
 .sec-title {
   position: relative;
   z-index: 1;
   margin-bottom: 65px;
+  margin-top: 50px;
 }
 
 .sec-title .title {
@@ -322,6 +331,10 @@ img {
   background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
 }
 
+.image-height{
+  height:315px;
+}
+
 /* Contact section */
 
 .contact-section {
@@ -454,6 +467,8 @@ img {
     height: 460px;
     width: 300px;
   }
+
+  
 }
 
 @media (max-width: 28.75em) {
@@ -463,5 +478,15 @@ img {
 
   .credits {
     font-size: 50%;
+  }
+}
+
+@media screen and (max-width:480px){
+  .sahil,.hritik{
+    margin-left: 0 !important;
+  }
+
+  .image-height{
+    height: 445px;;
   }
 }

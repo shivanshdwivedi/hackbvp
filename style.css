@@ -253,6 +253,11 @@
    padding-bottom: 3rem;
  }
 
+ #theme-info{
+  color: black;
+  font-size: 20px;
+ }
+
  .carousel,
  .item,
  .active {
@@ -370,6 +375,50 @@
    background: var(--main-blue);
  }
 
+ /* FAQ Section */
+
+ .faq-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 80vh; */
+  padding: 10rem 2rem;
+  background: var(--main-gray);
+}
+
+.question{
+  padding-top: 10px;
+  font-size:22px;
+  font-weight: bold;
+}
+
+
+.panel-heading [data-toggle="collapse"]:after {
+  font-family: 'Glyphicons Halflings';
+  float: right;
+  color: #F58723;
+  font-size: 22px;
+  line-height: 22px;
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: #454444;
+}
+
  /* Contact section */
 
  .contact-section {
@@ -426,6 +475,7 @@
  .Social-media {
    display: flex;
    justify-content: center;
+   padding-bottom: 30px;
  }
 
  .a {
@@ -444,7 +494,7 @@
    transition: transform 0.5s;
  }
 
- .testing {
+ .hide {
    display: none !important;
  }
 
@@ -484,9 +534,9 @@
  }
 
  @media screen and (max-width:480px) {
-   .fixed-top {
+   /* .fixed-top {
      position: absolute;
-   }
+   } */
 
    .main {
      display: flex;
@@ -494,7 +544,9 @@
      margin: 0 auto;
    }
 
-
+   .row{
+     margin-right: 0 !important;
+   }
 
    .left {
      width: 100%;
