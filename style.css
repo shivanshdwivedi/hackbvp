@@ -23,24 +23,29 @@
    box-sizing: border-box;
    font-size: 62.5%;
    scroll-behavior: smooth;
+   width: 100%;
  }
 
  @media (max-width: 75em) {
    html {
      font-size: 60%;
+     /* width: 100%; */
    }
  }
 
  @media (max-width: 61.25em) {
    html {
      font-size: 58%;
+     /* width: 100%; */
    }
  }
 
  @media (max-width: 28.75em) {
    html {
      font-size: 50%;
+     /* width: 100%; */
    }
+
  }
 
  /* Base styles */
@@ -82,6 +87,62 @@
  img {
    display: block;
    width: 100%;
+ }
+
+ .separator--dots {
+   overflow: visible;
+   border: 0;
+   content: "";
+   background-color: var(--main-red);
+   display: block;
+   height: 7px;
+   width: 7px;
+   border-radius: 50%;
+   position: relative;
+ }
+
+ .separator--dots:before {
+   content: "";
+   background-color: var(--main-red);
+   display: block;
+   height: 7px;
+   width: 7px;
+   border-radius: 50%;
+   position: absolute;
+   left: -32px;
+   animation: dot-move-left 1s ease-out forwards;
+ }
+
+ .separator--dots:after {
+   content: "";
+   background-color: var(--main-red);
+   display: block;
+   height: 7px;
+   width: 7px;
+   border-radius: 50%;
+   position: absolute;
+   left: 32px;
+   animation: dot-move-right 1s ease-out forwards;
+ }
+
+ @keyframes dot-move-right {
+   0% {
+     left: 0;
+   }
+
+   100% {
+     left: 32px;
+   }
+ }
+
+ @keyframes dot-move-left {
+   0% {
+     left: 0;
+   }
+
+   100% {
+     left: -32px;
+   }
  }
 
  /* nav */
@@ -172,6 +233,35 @@
    height: auto;
  }
 
+ @media (max-width: 28.75em) {
+   .welcome-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     background-color: #000;
+     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+   }
+
+   .left h1 {
+     padding-top: 100px;
+     font: 8rem 'Montserrat';
+     font-weight: 500;
+     color: white;
+   }
+
+   .about-section-header {
+     font-size: 4rem;
+   }
+
+   .gif {
+     width: 100%;
+     padding-top: 7rem;
+   }
+ }
+
  /* About section */
 
  .about-section {
@@ -183,7 +273,7 @@
 
  .about-section-header {
    max-width: 640px;
-   margin: 0 auto 6rem auto;
+   margin: 0 auto 4rem auto;
    /* border-bottom: 0.2rem solid var(--main-white); */
  }
 
@@ -207,25 +297,92 @@
    /* margin-left: 150px; */
  }
 
- @media (max-width: 28.75em) {
-   .welcome-section {
+ .about-right>p {
+   font-size: 2rem;
+   font-weight: 200;
+ }
+
+
+
+ /* DETAILS */
+
+ .details-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   padding: 10rem 1rem;
+   background-color: var(--main-gray);
+ }
+
+ .details-section-header {
+   max-width: 640px;
+   margin: 0 auto 1rem auto;
+   /* border-bottom: 0.2rem solid var(--main-white); */
+ }
+
+ .details-para {
+   padding: 0 25rem;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 200;
+ }
+
+ .sub-header {
+   font-size: 4.5rem;
+ }
+
+ .details-sub-head {
+   font-size: 3.5rem;
+   color: #f6bb08;
+ }
+
+ .rules {
+   padding: 0 25rem;
+ }
+
+ .details-para-prof {
+   font-size: 2.5rem;
+   text-align: center;
+ }
+
+ @media screen and (max-width: 600px) {
+   .details-section {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     text-align: center;
      width: 100%;
      height: 100%;
-     background-color: #000;
-     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+     /* padding: 10rem 2rem; */
+     background: var(--main-gray);
    }
 
-   .about-section-header {
-     font-size: 4rem;
+   .details-para {
+     padding: 0;
    }
 
-   .gif {
-     width: 100%;
-     padding-top: 7rem;
+   .sub-header {
+     font-size: 4.5rem;
+   }
+
+   .details-sub-head {
+     font-size: 3.5rem;
+     color: #f6bb08;
+   }
+
+   .rules {
+     padding: 0;
+     margin-left: 2.5rem;
+     text-align: left;
+   }
+
+   .details-para-prof {
+     font-size: 2.5rem;
+     text-align: center;
    }
  }
 
@@ -546,6 +703,8 @@
    .sponsors-section {
      padding-bottom: 2rem;
    }
+
+
  }
 
 
