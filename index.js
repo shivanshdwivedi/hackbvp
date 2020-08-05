@@ -73,14 +73,15 @@ function myFunction(y) {
     // If media query matches
     // document.getElementById('gallery').classList.add('custom');
     // document.getElementById('exampleModal').classList.add('custom');
-    console.log(document.getElementById('carouselExampleFade').classList);
-    document.getElementById('carouselExampleFade').classList.add('testing');
-    document.getElementById('gallery').classList.remove('testing');
+    document.getElementById('carouselExampleFade').classList.add('hide');
+    document.getElementById('gallery').classList.remove('hide');
+    document.getElementById('theme-info').classList.remove('hide');
   } else {
     // document.getElementById('gallery').classList.remove('custom');
     // document.getElementById('exampleModal').classList.remove('custom');
-    document.getElementById('gallery').classList.add('testing');
-    document.getElementById('carouselExampleFade').classList.remove('testing');
+    document.getElementById('gallery').classList.add('hide');
+    document.getElementById('carouselExampleFade').classList.remove('hide');
+    document.getElementById('theme-info').classList.add('hide');
   }
 }
 
