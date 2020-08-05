@@ -52,11 +52,11 @@ img {
   margin-bottom: 60px;
 }
 
-.hritik{
+.hritik {
   margin-left: 140px !important;
 }
 
-.sahil{
+.sahil {
   margin-left: 100px !important;
 }
 
@@ -331,8 +331,8 @@ img {
   background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
 }
 
-.image-height{
-  height:315px;
+.image-height {
+  height: 315px;
 }
 
 /* Contact section */
@@ -350,7 +350,7 @@ img {
 }
 
 .contact-section-header>h2 {
-  font-size: 6rem;
+  font-size: 4rem;
   color: var(--main-gray);
 }
 
@@ -468,12 +468,12 @@ img {
     width: 300px;
   }
 
-  
+
 }
 
 @media (max-width: 28.75em) {
   .contact-web {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .credits {
@@ -481,12 +481,26 @@ img {
   }
 }
 
-@media screen and (max-width:480px){
-  .sahil,.hritik{
+@media screen and (max-width:480px) {
+
+  .sahil,
+  .hritik {
     margin-left: 0 !important;
   }
 
-  .image-height{
-    height: 445px;;
+  .image-height {
+    height: auto;
+  }
+
+  .team-page-section {
+    padding-left: 2rem;
+  }
+
+  h3>a {
+    font-size: 2.5rem;
+  }
+
+  .team-block .inner-box .lower-content .designation {
+    font-size: 1.8rem;
   }
 }
