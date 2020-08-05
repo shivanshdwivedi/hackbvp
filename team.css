@@ -473,7 +473,7 @@ img {
 
 @media (max-width: 28.75em) {
   .contact-web {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .credits {
@@ -489,11 +489,18 @@ img {
   }
 
   .image-height {
-    height: 445px;
-    ;
+    height: auto;
   }
 
-  html {
-    padding-left: 1rem;
+  .team-page-section {
+    padding-left: 2rem;
+  }
+
+  h3>a {
+    font-size: 2.5rem;
+  }
+
+  .team-block .inner-box .lower-content .designation {
+    font-size: 1.8rem;
   }
 }
