@@ -247,7 +247,7 @@
 
    .left h1 {
      padding-top: 100px;
-     font: 8rem 'Montserrat';
+     font: 7.8rem 'Montserrat';
      font-weight: 500;
      color: white;
    }
@@ -939,14 +939,14 @@
  }
 
  .popup {
-   color: black;
+   color: var(--main-blue);
    width: 100%;
  }
 
  .popups {
    color: black;
    font-weight: 500;
-   font-size: 3rem;
+   font-size: 2.2rem;
    width: 100%;
  }
 
