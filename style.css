@@ -661,6 +661,10 @@
    display: none !important;
  }
 
+ .ic {
+   color: #4fce5d;
+ }
+
  .i {
    font-size: 2rem;
    color: #777;
