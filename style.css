@@ -261,7 +261,7 @@
      padding-top: 7rem;
    }
 
-   br {
+   .location-break {
      display: none;
    }
  }
