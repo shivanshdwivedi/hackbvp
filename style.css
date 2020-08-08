@@ -661,10 +661,6 @@
    display: none !important;
  }
 
- .ic {
-   color: #4fce5d;
- }
-
  .i {
    font-size: 2rem;
    color: #777;
@@ -759,6 +755,9 @@
      margin-right: 0 !important;
      width: 50% !important;
      margin-bottom: 15%;
+     border-left-width:0 ; 
+     border-top-width:0 ;
+     border-bottom-width:0 ;
    }
 
 
