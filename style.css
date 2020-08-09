@@ -289,7 +289,9 @@ img {
   width: 30%;
   float: left;
   text-align: center;
+  padding-bottom: 350px;
 }
+
 
 .about-right {
   width: 70%;
@@ -734,6 +736,7 @@ img {
     margin: auto;
     width: 90%;
     float: none;
+    padding-bottom: 0px;
   }
 
   .about-left img {
