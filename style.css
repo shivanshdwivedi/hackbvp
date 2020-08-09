@@ -300,14 +300,14 @@ img {
   padding-bottom: 6rem;
 }
 
-.about-left > img {
+.about-left>img {
   width: auto;
   /* border-radius: 50%; */
   padding: 50px;
   /* margin-left: 150px; */
 }
 
-.about-right > p {
+.about-right>p {
   font-size: 2rem;
   font-weight: 200;
 }
@@ -420,7 +420,7 @@ img {
   background: #e3edf7;
 }
 
-.theme-section-header > h2 {
+.theme-section-header>h2 {
   font-size: 6rem;
   padding-top: 10rem;
 }
@@ -463,7 +463,7 @@ img {
     background: #e3edf7;
   }
 
-  .theme-section-header > h2 {
+  .theme-section-header>h2 {
     font-size: 4rem;
   }
 
@@ -604,14 +604,14 @@ img {
   background: #e3edf7;
 }
 
-.contact-section-header > h2 {
+.contact-section-header>h2 {
   padding-top: 2rem;
   font-size: 4rem;
   color: var(--main-gray);
 }
 
 @media (max-width: 28.75em) {
-  .contact-section-header > h2 {
+  .contact-section-header>h2 {
     font-size: 4rem;
   }
 }
@@ -875,6 +875,7 @@ CSS Pretty Print #gallery img {
 }
 
 @media (min-width: 768px) {
+
   #exampleModal.custom .modal-body::before,
   #exampleModal.custom .modal-body::after {
     border-radius: 3px 30px;
@@ -944,6 +945,7 @@ CSS Pretty Print #gallery img {
 }
 
 @media (min-width: 768px) {
+
   #exampleModal.custom .carousel-control-prev,
   #exampleModal.custom .carousel-control-next {
     top: 0;
