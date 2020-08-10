@@ -304,7 +304,7 @@ img {
   width: 30%;
   float: left;
   text-align: center;
-  padding-bottom: 350px;
+  padding-bottom: 250px;
 }
 
 
@@ -749,8 +749,9 @@ img {
   }
 
   .about-left {
+    padding-top: 0;
     margin: auto;
-    width: 90%;
+    width: 100%;
     float: none;
     padding-bottom: 0px;
   }
