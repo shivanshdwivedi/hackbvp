@@ -88,3 +88,8 @@ function myFunction(y) {
 var y = window.matchMedia('(max-width: 480px)');
 myFunction(y); // Call listener function at run time
 y.addListener(myFunction); // Attach listener function on state changes
+
+//==========================
+$('.navbar-collapse a').click(function () {
+  $('.navbar-collapse').collapse('hide');
+});
