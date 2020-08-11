@@ -367,6 +367,8 @@ img {
   letter-spacing: 0.5rem;
   color: #555;
   text-align: center;
+  padding: 0;
+  margin: 0 0 4px;
 }
 
 .name-contact {
@@ -389,7 +391,7 @@ img {
 .Social-media {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 .a {

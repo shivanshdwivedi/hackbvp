@@ -307,7 +307,6 @@ img {
   padding-bottom: 250px;
 }
 
-
 .about-right {
   width: 70%;
   float: right;
@@ -331,6 +330,11 @@ img {
 @media screen and (max-width: 600px) {
   .about-section {
     flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .about-left>img {
+    padding-top: 0;
   }
 }
 
@@ -661,7 +665,7 @@ img {
 .Social-media {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .a {
