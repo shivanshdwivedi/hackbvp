@@ -146,7 +146,7 @@ img {
 
 /* nav */
 
-.logo {
+.logos {
   padding-right: 100px;
 }
 
@@ -1091,7 +1091,16 @@ CSS Pretty Print #gallery img {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
+  margin-left: 16rem;
 }
+
+@media screen and (max-width: 480px) {
+  #devfolio-apply-now {
+    margin-left: 9rem;
+  }
+}
+
+
 
 #devfolio-apply-now:not([disabled]) {
   cursor: pointer;
