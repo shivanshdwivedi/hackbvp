@@ -1104,3 +1104,10 @@ CSS Pretty Print #gallery img {
 #devfolio-apply-now:hover {
   background-color: #2954BF !important;
 }
+
+@media(max-width : 480px){
+  .mobile{
+    width: 100% !important;
+    
+  }
+}
