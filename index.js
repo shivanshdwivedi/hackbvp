@@ -95,6 +95,7 @@ $('.navbar-collapse a').click(function () {
 });
 
 //========================
+// Initialize elements and events
 document.addEventListener('DOMContentLoaded', function () {
   let devfolioOptions = {
     buttonSelector: '#devfolio-apply-now',

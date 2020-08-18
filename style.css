@@ -1091,7 +1091,6 @@ CSS Pretty Print #gallery img {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
 }
 
 #devfolio-apply-now:not([disabled]) {
