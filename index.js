@@ -93,3 +93,29 @@ y.addListener(myFunction); // Attach listener function on state changes
 $('.navbar-collapse a').click(function () {
   $('.navbar-collapse').collapse('hide');
 });
+
+//========================
+// Initialize elements and events
+document.addEventListener('DOMContentLoaded', function () {
+  let devfolioOptions = {
+    buttonSelector: '#devfolio-apply-now',
+    key: 'hackbvp',
+  };
+
+  let script = document.createElement('script');
+  script.src = 'https://apply.devfolio.co';
+  document.head.append(script);
+
+  script.onload = function () {
+    new Devfolio(devfolioOptions);
+  };
+
+  script.onerror = function () {
+    document
+      .querySelector(devfolioOptions.buttonSelector)
+      .addEventListener('click', function () {
+        window.location.href =
+          'https://devfolio.co/external-apply/' + devfolioOptions.key;
+      });
+  };
+});
