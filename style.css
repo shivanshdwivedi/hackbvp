@@ -1105,9 +1105,9 @@ CSS Pretty Print #gallery img {
   background-color: #2954BF !important;
 }
 
-@media(max-width : 480px){
-  .mobile{
+@media(max-width : 480px) {
+  .mobile {
     width: 100% !important;
-    
+
   }
 }
