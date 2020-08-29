@@ -1110,4 +1110,8 @@ CSS Pretty Print #gallery img {
     width: 100% !important;
 
   }
+
+  .card-img-top {
+    margin-bottom: 50px;
+  }
 }
