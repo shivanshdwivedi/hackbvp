@@ -1297,7 +1297,7 @@ ul {
 .team-area .info .message {
   height: 50px;
   line-height: 40px;
-  margin-left: -25px;
+  margin-left: 35px;
   margin-top: -25px;
   position: absolute;
   text-align: center;
@@ -1340,36 +1340,32 @@ ul {
   text-transform: uppercase;
 }
 
-.team-area .social li.twitter a {
-  background-color: #00b6f1;
+.jury-mobile-r {
+  margin-left: 150px;
 }
 
-.team-area .social li.pinterest a {
-  background-color: #bd081c;
+.jury-mobile-l {
+  margin-left: 150px;
 }
 
-.team-area .social li.facebook a {
-  background-color: #3b5998;
+.jury-mention {
+  color: #000;
 }
 
-.team-area .social li.google-plus a {
-  background-color: #df4a32;
-}
-
-.team-area .social li.vimeo a {
-  background-color: #1ab7ea;
-}
-
-.team-area .social li.instagram a {
-  background-color: #cd486b;
-}
-
-.jury-mobile {
-  margin-left: 300px;
+.ashna-mentor {
+  margin-left: 380px;
 }
 
 @media only screen and (max-width: 600px) {
-  .jury-mobile {
+  .jury-mobile-r {
+    margin-left: 0px;
+  }
+
+  .jury-mobile-l {
+    margin-left: 0px;
+  }
+
+  .ashna-mentor {
     margin-left: 0px;
   }
 }
