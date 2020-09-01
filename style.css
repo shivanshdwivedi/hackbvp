@@ -652,6 +652,16 @@ img {
   color: var(--main-gray);
 }
 
+.size{
+  height: 372px;
+}
+
+.size2{
+  height: 348px;
+  
+}
+
+
 @media (max-width: 28.75em) {
   .contact-section-header>h2 {
     font-size: 4rem;
@@ -774,6 +784,7 @@ img {
     margin: 0 auto;
   }
 
+ 
   .about-left {
     padding-top: 0;
     margin: auto;
