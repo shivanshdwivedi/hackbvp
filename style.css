@@ -652,13 +652,13 @@ img {
   color: var(--main-gray);
 }
 
-.size{
+.size {
   height: 372px;
 }
 
-.size2{
+.size2 {
   height: 348px;
-  
+
 }
 
 
@@ -784,7 +784,7 @@ img {
     margin: 0 auto;
   }
 
- 
+
   .about-left {
     padding-top: 0;
     margin: auto;
@@ -1374,7 +1374,7 @@ ul {
   color: #000;
 }
 
-.ashna-mentor {
+.jury-1-row {
   margin-left: 380px;
 }
 
@@ -1387,7 +1387,7 @@ ul {
     margin-left: 0px;
   }
 
-  .ashna-mentor {
+  .jury-1-row {
     margin-left: 0px;
   }
 }
